@@ -1,0 +1,151 @@
+.header {
+  position: relative;
+
+  padding-top: 65px;
+
+  background-color: #3852f7;
+
+  overflow: hidden;
+
+  &:before {
+    content: url('../assets/images/poly-1.svg');
+
+    position: absolute;
+    bottom: 102px;
+    left: 0;
+  }
+
+  &:after {
+    content: url('../assets/images/poly-5.svg');
+
+    position: absolute;
+    top: 32px;
+    right: 0;
+  }
+  
+  .header-wrapper {
+    .logo-wrapper {
+      position: relative;
+  
+      width: max-content;
+  
+      &:before {
+        content: url('../assets/images/poly-2.svg');
+    
+        position: absolute;
+        top: 16px;
+        right: -173px;
+      }
+  
+      .logo {
+        width: 160px;
+      }
+    }
+
+    .header-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 82px;
+
+      .heading-wrapper {
+        position: relative;
+        z-index: 2
+        ;
+      }
+    
+      h1 {
+        margin: 0;
+    
+        font-family: 'Roboto';
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 68px;
+    
+        color: #fff;
+      }
+    
+      p {
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 32px;
+      }
+    }
+
+    .image-wrapper {
+      position: relative;
+      z-index: 1;
+
+      margin-top: -106px;
+      margin-right: -144px;
+
+      &:before {
+        content: url('../assets/images/poly-3.svg');
+        
+        position: absolute;
+        top: 51px;
+        left: -121px;
+        z-index: -1;
+      }
+
+      img {
+        margin-bottom: -4px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1500px) { 
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 991px) { 
+    padding-bottom: 32px;
+
+    .header-wrapper {
+      .logo-wrapper {
+        &:before {
+          top: 38px;
+          right: -143px;
+        }
+
+        .logo {
+          width: 112px;
+        }
+      }
+
+      .header-info {
+        margin-top: 32px;
+
+        h1 {
+          font-size: 32px;
+        }
+
+        p {
+          max-width: 210px;
+
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      .image-wrapper {
+        &:before {
+          top: -58px;
+          left: -122px;
+
+          transform: scale(0.4);
+        }
+
+        margin-top: 9px;
+        margin-right: -78px;
+
+        img {
+          width: 178px;
+        }
+      }
+    }
+  }
+}

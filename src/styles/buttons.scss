@@ -1,0 +1,48 @@
+button {
+  background-color: transparent;
+  border: 0;
+  
+  appearance: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: 23px 32px;
+  width: 301px;
+
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #fff;
+
+  background-color: #3852f7;
+  border-radius: 8px;
+}
+
+.pagination-btns-wrapper {
+  button {
+    padding: 23px 28px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    border: 1px solid #cccccc;
+    border-right: 0;
+
+    &.active {
+      color: #3852f7;
+
+      border: 1px solid #3852f7;
+    }
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    &:last-child {
+      border-right: 1px solid #cccccc;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+}

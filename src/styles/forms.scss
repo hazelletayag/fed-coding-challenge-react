@@ -1,0 +1,51 @@
+form {
+  label {
+    position: relative;
+
+    input {
+      padding: 0 50px;
+      width: 745px;
+      height: 60px;
+
+      font-size: 16px;
+      color: #000;
+
+      border: 2px solid #e6e6e6;
+      border-radius: 8px;
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: -2px;
+      left: 18px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) { 
+    label {
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) { 
+    width: 100%;
+
+    label {
+      width: 48%;
+
+      input {
+        padding: 0 0 0 35px;
+        width: calc(100% - 35px);
+        height: 43px;
+
+        font-size: 14px;
+      }
+    }
+  }
+}
